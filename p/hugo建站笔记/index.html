@@ -3,30 +3,24 @@
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='1. 安装hugo 下载地址 https://github.com/gohugoio/hugo/releases
 下载 hugo_extended_0.96.0_Windows-64bit.zip 解压得到 hugo.exe
-1 2 3 4 5  hugo new site blog cd blog move ..\hugo.exe . git init git commit -a &amp;#34;hugo init&amp;#34;   安装主题
-1 2 3 4  git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack move config.toml config.toml.bak copy themes\hugo-theme-stack\exampleSite\config.yaml . copy themes\hugo-theme-stack\assets .\assets   修改站点信息
-1 2 3  baseurl: https://feiyang05.github.io/ DefaultContentLanguage: zh-cn title: 我的小站   启动服务
-1  hugo server   访问 http://localhost:1313/ 可以预览网站'><title>Hugo建站笔记</title>
+1 2 3 4 5 6 7 8  hugo new site blog cd blog move ..\hugo.exe . git init git remote add origin https://github.com/feiyang05/blog.git git add -A git commit -m &amp;#34;hugo init&amp;#34; git push -u origin master   安装主题
+1 2 3 4  git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack move config.toml config.toml.bak copy themes\hugo-theme-stack\exampleSite\config.yaml . copy themes\hugo-theme-stack\assets .\assets   修改站点信息'><title>Hugo建站笔记</title>
 
 <link rel='canonical' href='https://feiyang05.github.io/p/hugo%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/'>
 
 <link rel="stylesheet" href="/scss/style.min.d9e0562edde3d2bdf9d3d81365095a29d062ddaaa5d671f22168e57dfdb18b4f.css"><meta property='og:title' content='Hugo建站笔记'>
 <meta property='og:description' content='1. 安装hugo 下载地址 https://github.com/gohugoio/hugo/releases
 下载 hugo_extended_0.96.0_Windows-64bit.zip 解压得到 hugo.exe
-1 2 3 4 5  hugo new site blog cd blog move ..\hugo.exe . git init git commit -a &amp;#34;hugo init&amp;#34;   安装主题
-1 2 3 4  git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack move config.toml config.toml.bak copy themes\hugo-theme-stack\exampleSite\config.yaml . copy themes\hugo-theme-stack\assets .\assets   修改站点信息
-1 2 3  baseurl: https://feiyang05.github.io/ DefaultContentLanguage: zh-cn title: 我的小站   启动服务
-1  hugo server   访问 http://localhost:1313/ 可以预览网站'>
+1 2 3 4 5 6 7 8  hugo new site blog cd blog move ..\hugo.exe . git init git remote add origin https://github.com/feiyang05/blog.git git add -A git commit -m &amp;#34;hugo init&amp;#34; git push -u origin master   安装主题
+1 2 3 4  git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack move config.toml config.toml.bak copy themes\hugo-theme-stack\exampleSite\config.yaml . copy themes\hugo-theme-stack\assets .\assets   修改站点信息'>
 <meta property='og:url' content='https://feiyang05.github.io/p/hugo%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/'>
 <meta property='og:site_name' content='我的小站'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2022-03-30T12:02:20&#43;08:00'/><meta property='article:modified_time' content='2022-03-30T12:02:20&#43;08:00'/><meta property='og:image' content='https://feiyang05.github.io/p/hugo%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/test.jpg' />
 <meta name="twitter:title" content="Hugo建站笔记">
 <meta name="twitter:description" content="1. 安装hugo 下载地址 https://github.com/gohugoio/hugo/releases
 下载 hugo_extended_0.96.0_Windows-64bit.zip 解压得到 hugo.exe
-1 2 3 4 5  hugo new site blog cd blog move ..\hugo.exe . git init git commit -a &amp;#34;hugo init&amp;#34;   安装主题
-1 2 3 4  git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack move config.toml config.toml.bak copy themes\hugo-theme-stack\exampleSite\config.yaml . copy themes\hugo-theme-stack\assets .\assets   修改站点信息
-1 2 3  baseurl: https://feiyang05.github.io/ DefaultContentLanguage: zh-cn title: 我的小站   启动服务
-1  hugo server   访问 http://localhost:1313/ 可以预览网站"><meta name="twitter:card" content="summary_large_image">
+1 2 3 4 5 6 7 8  hugo new site blog cd blog move ..\hugo.exe . git init git remote add origin https://github.com/feiyang05/blog.git git add -A git commit -m &amp;#34;hugo init&amp;#34; git push -u origin master   安装主题
+1 2 3 4  git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack move config.toml config.toml.bak copy themes\hugo-theme-stack\exampleSite\config.yaml . copy themes\hugo-theme-stack\assets .\assets   修改站点信息"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://feiyang05.github.io/p/hugo%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/test.jpg' />
     </head>
     <body class="
@@ -266,13 +260,19 @@
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new site blog 
 </span></span><span class="line"><span class="cl">cd blog
 </span></span><span class="line"><span class="cl">move ..\hugo.exe .
 </span></span><span class="line"><span class="cl">git init
-</span></span><span class="line"><span class="cl">git commit -a &#34;hugo init&#34;
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/feiyang05/blog.git
+</span></span><span class="line"><span class="cl">git add -A
+</span></span><span class="line"><span class="cl">git commit -m &#34;hugo init&#34;
+</span></span><span class="line"><span class="cl">git push -u origin master
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>安装主题</p>

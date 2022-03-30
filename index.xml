@@ -13,6 +13,12 @@
         
         <guid>https://feiyang05.github.io/p/hugo%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/</guid>
         <description>&lt;img src="https://feiyang05.github.io/p/hugo%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/test.jpg" alt="Featured image of post Hugo建站笔记" /&gt;&lt;h2 id=&#34;1-安装hugo&#34;&gt;1. 安装hugo&lt;/h2&gt;
+&lt;h3 id=&#34;创建-github仓库&#34;&gt;创建 github仓库&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/feiyang05/blog.git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/feiyang05/blog.git&lt;/a&gt; 用于存放hugo工作区
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/feiyang05/feiyang05.github.io.git&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/feiyang05/feiyang05.github.io.git&lt;/a&gt; 用于存放和发布站点页面&lt;/p&gt;
+&lt;h3 id=&#34;安装hugo&#34;&gt;安装hugo&lt;/h3&gt;
 &lt;p&gt;下载地址 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;&lt;br&gt;
 下载 hugo_extended_0.96.0_Windows-64bit.zip 解压得到 hugo.exe&lt;/p&gt;
@@ -38,7 +44,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push -u origin master
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;安装主题&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;安装主题&#34;&gt;安装主题&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -53,7 +59,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;copy themes\hugo-theme-stack\assets .\assets
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;修改站点信息&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;修改站点信息&#34;&gt;修改站点信息&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -66,7 +72,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title: 我的小站
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;启动服务&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;启动服务&#34;&gt;启动服务&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -77,7 +83,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;访问 http://localhost:1313/ 可以预览网站&lt;/p&gt;
 &lt;h2 id=&#34;2-发表文章&#34;&gt;2. 发表文章&lt;/h2&gt;
-&lt;p&gt;新建文章&lt;/p&gt;
+&lt;h3 id=&#34;新建文章&#34;&gt;新建文章&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -86,8 +92,8 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new post/helloworld/index.md
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;编辑文章内容&lt;br&gt;
-draft: false 文章可见&lt;br&gt;
+&lt;/div&gt;&lt;h3 id=&#34;编辑文章&#34;&gt;编辑文章&lt;/h3&gt;
+&lt;p&gt;draft: false 文章可见&lt;br&gt;
 image 顶栏图&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -130,7 +136,7 @@ image 顶栏图&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;将 test.jpg 放入 index.md 同级目录下，可以直接显示图片。&lt;br&gt;
 如果图片放在了下一级目录，例如img目录，则文章中图片地址需要替换成‘img/test.jpg’&lt;/p&gt;
 &lt;h2 id=&#34;3-构建和推送&#34;&gt;3. 构建和推送&lt;/h2&gt;
-&lt;p&gt;构建站点页面&lt;/p&gt;
+&lt;h3 id=&#34;构建页面&#34;&gt;构建页面&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -139,7 +145,8 @@ image 顶栏图&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;推送站点页面 （生成的页面位于 public 目录下  ）&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;推送站点页面&#34;&gt;推送站点页面&lt;/h3&gt;
+&lt;p&gt;生成的页面位于 public 目录下&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -188,7 +195,58 @@ image 顶栏图&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push -u origin master
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h2 id=&#34;5-评论功能&#34;&gt;5. 评论功能&lt;/h2&gt;
+&lt;p&gt;因为Stack主题上自带的评论区插件是 &lt;a class=&#34;link&#34; href=&#34;https://disqus.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Disqus&lt;/a&gt; ，国内无法访问，因此需要换成其他插件。这里使用 utterances：utterances是一款基于Github Issue的Github工具,优点主要是无广告、加载快、配置简单，轻量开源&lt;/p&gt;
+&lt;h3 id=&#34;安装utterances&#34;&gt;安装utterances&lt;/h3&gt;
+&lt;p&gt;访问 &lt;a class=&#34;link&#34; href=&#34;https://github.com/apps/utterances&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/apps/utterances&lt;/a&gt; 点击 Install按钮，选择Only select repositories - feiyang05/feiyang05.github.io&lt;/p&gt;
+&lt;h3 id=&#34;修改配置&#34;&gt;修改配置&lt;/h3&gt;
+&lt;p&gt;修改 config.yaml ，将 disqusjs 改为 utterances&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    comments:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        enabled: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        provider: utterances
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        disqusjs:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            shortname:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            apiUrl:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            apiKey:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            admin:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            adminLabel:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        utterances:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            repo: feiyang05/feiyang05.github.io
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            issueTerm: pathname
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            label:
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;参考文档：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/usage/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gohugo.io/getting-started/usage/&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://cyhour.com/1226/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cyhour.com/1226/&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://cloud.tencent.com/developer/article/1787522&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cloud.tencent.com/developer/article/1787522&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         
     </channel>

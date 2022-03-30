@@ -6,7 +6,7 @@
 1 2 3 4 5  hugo new site blog cd blog move ..\hugo.exe . git init git commit -a &amp;#34;hugo init&amp;#34;   安装主题
 1 2 3 4  git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack move config.toml config.toml.bak copy themes\hugo-theme-stack\exampleSite\config.yaml . copy themes\hugo-theme-stack\assets .\assets   修改站点信息
 1 2 3  baseurl: https://feiyang05.github.io/ DefaultContentLanguage: zh-cn title: 我的小站   启动服务
-1  hugo server   访问 http://localhost:1313/'><title>Hugo建站笔记</title>
+1  hugo server   访问 http://localhost:1313/ 可以预览网站'><title>Hugo建站笔记</title>
 
 <link rel='canonical' href='https://feiyang05.github.io/p/hugo%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/'>
 
@@ -16,7 +16,7 @@
 1 2 3 4 5  hugo new site blog cd blog move ..\hugo.exe . git init git commit -a &amp;#34;hugo init&amp;#34;   安装主题
 1 2 3 4  git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack move config.toml config.toml.bak copy themes\hugo-theme-stack\exampleSite\config.yaml . copy themes\hugo-theme-stack\assets .\assets   修改站点信息
 1 2 3  baseurl: https://feiyang05.github.io/ DefaultContentLanguage: zh-cn title: 我的小站   启动服务
-1  hugo server   访问 http://localhost:1313/'>
+1  hugo server   访问 http://localhost:1313/ 可以预览网站'>
 <meta property='og:url' content='https://feiyang05.github.io/p/hugo%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/'>
 <meta property='og:site_name' content='我的小站'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2022-03-30T12:02:20&#43;08:00'/><meta property='article:modified_time' content='2022-03-30T12:02:20&#43;08:00'/><meta property='og:image' content='https://feiyang05.github.io/p/hugo%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/test.jpg' />
@@ -26,7 +26,7 @@
 1 2 3 4 5  hugo new site blog cd blog move ..\hugo.exe . git init git commit -a &amp;#34;hugo init&amp;#34;   安装主题
 1 2 3 4  git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack move config.toml config.toml.bak copy themes\hugo-theme-stack\exampleSite\config.yaml . copy themes\hugo-theme-stack\assets .\assets   修改站点信息
 1 2 3  baseurl: https://feiyang05.github.io/ DefaultContentLanguage: zh-cn title: 我的小站   启动服务
-1  hugo server   访问 http://localhost:1313/"><meta name="twitter:card" content="summary_large_image">
+1  hugo server   访问 http://localhost:1313/ 可以预览网站"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://feiyang05.github.io/p/hugo%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/test.jpg' />
     </head>
     <body class="
@@ -312,7 +312,7 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>访问 http://localhost:1313/</p>
+</div><p>访问 http://localhost:1313/ 可以预览网站</p>
 <h2 id="2-发表文章">2. 发表文章</h2>
 <p>新建文章</p>
 <div class="highlight"><div class="chroma">
@@ -367,12 +367,61 @@ image 顶栏图</p>
 </div><p>将 test.jpg 放入 index.md 同级目录下，可以直接显示图片。<br>
 如果图片放在了下一级目录，例如img目录，则文章中图片地址需要替换成‘img/test.jpg’</p>
 <h2 id="3-构建和推送">3. 构建和推送</h2>
+<p>构建站点页面</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>推送站点页面 （生成的页面位于 public 目录下  ）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd public
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/feiyang05/feiyang05.github.io.git
+</span></span><span class="line"><span class="cl">git add -A
+</span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
+</span></span><span class="line"><span class="cl">git push -u origin master
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>等待片刻部署完成<br>
+访问 <a class="link" href="https://feiyang05.github.io/"  target="_blank" rel="noopener"
+    >https://feiyang05.github.io/</a></p>
+<h2 id="4-更新文章">4. 更新文章</h2>
+<p>将测试文章关闭</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">draft: true
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo
+</span></span><span class="line"><span class="cl">cd public
+</span></span><span class="line"><span class="cl">git add -A
+</span></span><span class="line"><span class="cl">git commit -m &#34;modify helloworld&#34;
+</span></span><span class="line"><span class="cl">git push -u origin master
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
@@ -409,38 +458,6 @@ image 顶栏图</p>
     
 
     
-
-<aside class="related-contents--wrapper">
-    <h2 class="section-title">相关文章</h2>
-    <div class="related-contents">
-        <div class="flex article-list--tile">
-            
-                
-<article class="has-image">
-    <a href="/p/helloworld/">
-        
-        
-            <div class="article-image">
-                <img src="/p/helloworld/test.6860719e8db3a2ffb227f14ef275ebf8_huc7ed8956cf53f642c1a792610869950c_1547454_250x150_fill_q75_box_smart1.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Helloworld"
-                        
-                        data-hash="md5-aGBxno2zov&#43;yJ/FO8nXr&#43;A==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Helloworld</h2>
-        </div>
-    </a>
-</article>
-            
-        </div>
-    </div>
-</aside>
 
      
     
@@ -609,6 +626,7 @@ image 顶栏图</p>
     <li><a href="#1-安装hugo">1. 安装hugo</a></li>
     <li><a href="#2-发表文章">2. 发表文章</a></li>
     <li><a href="#3-构建和推送">3. 构建和推送</a></li>
+    <li><a href="#4-更新文章">4. 更新文章</a></li>
   </ol>
 </nav>
         </div>
